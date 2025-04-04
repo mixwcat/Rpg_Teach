@@ -8,6 +8,7 @@ public class BlackHoleSkillController : MonoBehaviour
     public float growSpeed;
     public bool canGrow;
 
+//小汐到此一游
     // Start is called before the first frame update
     private void Start()
     {
