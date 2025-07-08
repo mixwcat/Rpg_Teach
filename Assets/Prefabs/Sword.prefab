@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6438767157194951024}
   - component: {fileID: 5473777871723868925}
   - component: {fileID: 4746967729839694098}
+  - component: {fileID: 197238242878680784}
   m_Layer: 8
   m_Name: Sword
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7172238727712862757}
@@ -94,7 +95,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03375821, y: 0.08248982}
+  m_Offset: {x: 0.10280393, y: 0.0116737485}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -105,7 +106,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.20004317, y: 0.19526729}
+  m_Size: {x: 0.6638886, y: 0.79012287}
   m_EdgeRadius: 0
 --- !u!114 &4746967729839694098
 MonoBehaviour:
@@ -119,6 +120,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a660028e466f23144a7ef1d330290375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 0
+  swordType: 0
+  amountOfBounce: 0
+  pierceAmount: 0
+  swordPrefab: {fileID: 0}
+  launchForce: {x: 0, y: 0}
+  swordGravity: 0
+  maxTravelDistance: 3
+  spinDuration: 2
+  spinGravity: 1
+  dotPrefab: {fileID: 0}
+  dotsParent: {fileID: 0}
+  numberOfDots: 0
+  spaceBetweenDots: 0
+  enemyTarget: []
+  pierceAmount: 0
+--- !u!210 &197238242878680784
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593697902947178895}
+  m_Enabled: 1
+  m_SortingLayerID: 1176244051
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &6576063918882610989
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +222,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6930562774783334623, guid: 3accdbde4e56f5c4e9cfa311b8cef55f, type: 3}
+  m_Sprite: {fileID: -2004053239, guid: f6b296ee51c42564abe9c05f1c502ecd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

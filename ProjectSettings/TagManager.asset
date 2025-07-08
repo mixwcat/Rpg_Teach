@@ -17,7 +17,7 @@ TagManager:
   - Sword
   - EnemyDetect
   - BlackHole
-  - 
+  - PlayerAttackBox
   - 
   - 
   - 
@@ -39,12 +39,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Player
-    uniqueID: 1176244051
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 2548644679
+    locked: 0
   - name: BlackHole
     uniqueID: 3931257453
+    locked: 0
+  - name: Item
+    uniqueID: 2442839587
+    locked: 0
+  - name: Enemy
+    uniqueID: 1023691041
+    locked: 0
+  - name: Player
+    uniqueID: 1176244051
+    locked: 0
+  - name: UI
+    uniqueID: 2594157999
     locked: 0
